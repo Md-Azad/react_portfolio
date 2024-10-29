@@ -1,0 +1,24 @@
+.moving-border {
+  font-size: 20px;
+  color: #fff;
+  background-color: #1a1a1a;
+  /* Set the border size */
+  border-radius: 50%;
+  border-width: 8px;
+  border-style: solid;
+  /* Set initial border color */
+  border-image: linear-gradient(90deg, #ff4d4d, #4d94ff, #4dff88) 1;
+  animation: animate-border 3s linear infinite;
+}
+
+@keyframes animate-border {
+  0% {
+    border-image-source: linear-gradient(90deg, #ff4d4d, #4d94ff, #4dff88);
+  }
+  50% {
+    border-image-source: linear-gradient(90deg, #4dff88, #ff4d4d, #4d94ff);
+  }
+  100% {
+    border-image-source: linear-gradient(90deg, #4d94ff, #4dff88, #ff4d4d);
+  }
+}

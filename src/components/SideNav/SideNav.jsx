@@ -30,7 +30,7 @@ const SideNav = () => {
             <FaGithub className="text-4xl" />
           </Link>
           <Link
-            to="https://github.com/Md-Azad"
+            to="https://www.linkedin.com/in/md-azad-hossain1/"
             target="_blank"
             id="linkedin"
             rel="noreferrer"
@@ -39,7 +39,7 @@ const SideNav = () => {
             <FaLinkedin className="text-4xl" />
           </Link>
           <Link
-            to="https://github.com/Md-Azad"
+            to="https://codeforces.com/profile/azadh4110"
             target="_blank"
             rel="noreferrer"
             id="codeforces"

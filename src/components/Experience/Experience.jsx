@@ -76,10 +76,11 @@ const Experience = () => {
           </button>
         </div>
       </div>
-      <div className="flex justify-start">
+      <div className="flex items-center justify-between flex-col md:flex-row font-bold text-white">
         <Link to="/">
           <button className="bg-yellow-600 px-4 py-2 rounded-lg">Home</button>
         </Link>
+        <p>Developed By Md Azad Hossain</p>
       </div>
     </div>
   );

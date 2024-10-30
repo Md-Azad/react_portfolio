@@ -26,10 +26,11 @@ const Skills = () => {
           </h1>
         ))}
       </Marquee>
-      <div className="flex mt-4">
+      <div className="flex items-center justify-between flex-col md:flex-row font-bold text-white md:mt-8">
         <Link to="/">
           <button className="bg-yellow-600 px-4 py-2 rounded-lg">Home</button>
         </Link>
+        <p>Developed By Md Azad Hossain</p>
       </div>
     </div>
   );

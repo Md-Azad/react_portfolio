@@ -12,12 +12,7 @@ const Projects = () => {
   const projects = getAllProjects();
 
   return (
-    <div className="mt-12 pb-12 z-10 ">
-      <div className="flex justify-start mt-4">
-        <Link to="/">
-          <button className="bg-yellow-600 px-4 py-2 rounded-lg">Home</button>
-        </Link>
-      </div>
+    <div className="mt-12 pb-12 z-10 space-y-2 md:space-y-8">
       <h1
         data-aos="fade-up-right"
         data-aos-once="false"
@@ -30,6 +25,12 @@ const Projects = () => {
         {projects.map((project) => (
           <ProjectCard key={project.id} project={project}></ProjectCard>
         ))}
+      </div>
+      <div className="flex items-center justify-between flex-col md:flex-row font-bold text-white">
+        <Link to="/">
+          <button className="bg-yellow-600 px-4 py-2 rounded-lg">Home</button>
+        </Link>
+        <p>Developed By Md Azad Hossain</p>
       </div>
     </div>
   );

@@ -76,10 +76,10 @@ const SideNav = () => {
         </NavLink>
         <NavLink className=" flex gap-4" to="/projects">
           <GiSkills className="text-4xl" />
-          Projects & Skills
+          Projects
         </NavLink>
         <NavLink className="flex gap-4" to="/certificates">
-          <BiSolidCertification className="text-4xl" /> Certification
+          <BiSolidCertification className="text-4xl" /> Certification & Skills
         </NavLink>
         <NavLink className="flex gap-4" to="/blogs">
           <FaBloggerB className="text-4xl" />

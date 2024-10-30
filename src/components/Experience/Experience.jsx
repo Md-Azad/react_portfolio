@@ -1,5 +1,6 @@
 import Aos from "aos";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   useEffect(() => {
@@ -74,6 +75,11 @@ const Experience = () => {
             Responsiveness
           </button>
         </div>
+      </div>
+      <div className="flex justify-start">
+        <Link to="/">
+          <button className="bg-yellow-600 px-4 py-2 rounded-lg">Home</button>
+        </Link>
       </div>
     </div>
   );

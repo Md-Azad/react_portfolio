@@ -20,11 +20,19 @@ const About = () => {
             opportunities for collaboration that can drive success together!
             Thanks for visiting me. 😊
           </p>
-          <Link to="/projects">
-            <button className="btn btn-info text-white rounded-md mr-4">
-              See Projects
+          <div className="flex">
+            <Link to="/projects">
+              <button className="btn btn-info text-white text-sm rounded-md mr-4">
+                See Projects
+              </button>
+            </Link>
+
+            <button className="btn btn-success ml-4 text-white">
+              <a href="../assets/cv.pdf" download="Azad_Resume.pdf">
+                Download Resume
+              </a>
             </button>
-          </Link>
+          </div>
           {/* <button
             onClick={() =>
               window.open(
@@ -36,11 +44,6 @@ const About = () => {
           >
             View Resume
           </button> */}
-          <button className="btn btn-success ml-4 text-white">
-            <a href="../assets/cv.pdf" download="Azad_Resume.pdf">
-              Download Resume
-            </a>
-          </button>
         </div>
         <div className="">
           <div className="flex justify-center gap-8 ">

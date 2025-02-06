@@ -16,11 +16,13 @@ const SideNav = () => {
   return (
     <div className="bg-[#173957]  w-full rounded flex flex-col   md:min-h-screen  ">
       <div className=" px-4 flex gap-4 items-center justify-between md:flex-col">
-        <img
-          className="my-2 w-12 h-12 md:w-full md:h-full"
-          src={profile}
-          alt=""
-        />
+        <Link to="/">
+          <img
+            className="my-2 w-12 h-12 md:w-full md:h-full"
+            src={profile}
+            alt=""
+          />
+        </Link>
 
         <div className="md:hidden lg:hidden">
           <div className="dropdown dropdown-end">

@@ -1,8 +1,8 @@
 import Marquee from "react-fast-marquee";
-//
-import { getAllSkills } from "../../data/skillsData";
 import SkillCard from "./SkillCard";
 import { Link } from "react-router-dom";
+
+import { getAllSkills } from "../../data/skillsData.js";
 
 const Skills = () => {
   const skills = getAllSkills();

@@ -1,4 +1,4 @@
-import { getAllProjects } from "../../data/ProjectsData";
+import { getAllProjects } from "../../data/data.js";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";

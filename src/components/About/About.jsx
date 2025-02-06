@@ -9,7 +9,7 @@ const About = () => {
       <div className="grid grid-col-1 md:grid-cols-2 pt-8  ">
         <div className="text-white space-y-4">
           <h1 className="text-4xl font-bold">Md Azad Hossain</h1>
-          <h1 className="text-2xl font-bold">Full-Stack Engineer</h1>
+          <h1 className="text-2xl font-bold">Full-Stack Web Developer</h1>
           <p className="text-justify font-semibold">
             A passionate full-stack developer with a flair for crafting dynamic
             websites using React and Next.js, ensuring exceptional user
@@ -21,11 +21,11 @@ const About = () => {
             Thanks for visiting me. 😊
           </p>
           <Link to="/projects">
-            <button className="bg-green-600 px-4 py-2 rounded-md mr-4">
+            <button className="btn btn-info text-white rounded-md mr-4">
               See Projects
             </button>
           </Link>
-          <button
+          {/* <button
             onClick={() =>
               window.open(
                 "https://drive.google.com/file/d/1GIowCdnoLKGpKOQW1EXuwv0lP2LXINNx/view?usp=sharing",
@@ -35,6 +35,11 @@ const About = () => {
             className="bg-green-600 px-4 py-2 rounded-md"
           >
             View Resume
+          </button> */}
+          <button className="btn btn-success ml-4 text-white">
+            <a href="../assets/cv.pdf" download="Azad_Resume.pdf">
+              Download Resume
+            </a>
           </button>
         </div>
         <div className="">

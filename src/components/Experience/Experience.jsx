@@ -47,8 +47,8 @@ const Experience = () => {
             platform to enhance usability.
           </li>
           <li>
-            - Built responsive, visually appealing interfaces using React,
-            Next.js, and Tailwind CSS.
+            - Built responsive, visually appealing interfaces using React and
+            Tailwind CSS.
           </li>
           <li>
             - Improved agile workflows by contributing to daily stand-ups and

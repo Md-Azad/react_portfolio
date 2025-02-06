@@ -3,11 +3,13 @@ import { getProjectImgUrl } from "../../utils/getImgUrl";
 import PropTypes from "prop-types";
 import Aos from "aos";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const ProjectCard = ({ project }) => {
   useEffect(() => {
     Aos.init();
   }, []);
+
   return (
     <div
       className="flex flex-col justify-center border p-4 rounded-md "
@@ -27,19 +29,23 @@ const ProjectCard = ({ project }) => {
           <FaEye className="text-7xl" />
           <p>{project.title}</p>
 
-          <button className="bg-green-900 mt-12 px-4 py-2 rounded-lg">
+          <Link
+            to={`/details/${project?.id}`}
+            className="bg-green-900 mt-12 px-4 py-2 rounded-lg"
+          >
             Details
-          </button>
+          </Link>
         </div>
       </div>
+      <p className=" mt-2 text-xl font-bold text-white">{project?.title}</p>
       <div className="flex flex-col md:flex-row justify-between">
         <a href={project.live} target="_blank">
-          <button className="text-white font-bold bg-green-400 mt-12 px-4 py-2 rounded-lg">
+          <button className="text-white font-bold bg-green-400 mt-8 px-4 py-2 rounded-lg">
             Live View
           </button>
         </a>
         <a href={project.github} target="_blank">
-          <button className="text-white font-bold bg-green-400 mt-12 px-4 py-2 rounded-lg">
+          <button className="text-white font-bold bg-green-400 mt-8 px-4 py-2 rounded-lg">
             GitHub
           </button>
         </a>
